@@ -186,6 +186,91 @@ The project uses a custom Tailwind configuration with:
 ### TypeScript
 Strict TypeScript configuration for better code quality and developer experience.
 
+## 🚀 Deployment
+
+### Frontend Deployment Options (Free)
+
+#### 1. Vercel (Recommended)
+- **Free tier**: 100GB bandwidth, unlimited projects
+- **Features**: Automatic deployments, preview deployments, edge functions
+- **Steps**:
+  1. Push code to GitHub
+  2. Sign up at [vercel.com](https://vercel.com)
+  3. Import your repository
+  4. Configure environment variables
+  5. Deploy automatically
+
+#### 2. Netlify
+- **Free tier**: 100GB bandwidth, 300 build minutes/month
+- **Features**: Continuous deployment, form handling, edge functions
+- **Steps**:
+  1. Sign up at [netlify.com](https://netlify.com)
+  2. Connect GitHub repository
+  3. Set build command: `npm run build`
+  4. Set publish directory: `out` (for static export)
+  5. Deploy
+
+#### 3. GitHub Pages (Static Export)
+- **Free tier**: Unlimited public repositories
+- **Note**: Requires static export configuration
+- **Steps**:
+  1. Add `output: 'export'` to `next.config.mjs`
+  2. Build and export: `npm run build`
+  3. Deploy `out` folder to GitHub Pages
+
+### Backend Deployment Options (Free)
+
+#### 1. Railway
+- **Free tier**: 500 hours/month, 1GB RAM
+- **Best for**: Node.js, Python, databases
+- **Steps**:
+  1. Sign up at [railway.app](https://railway.app)
+  2. Connect GitHub repository
+  3. Deploy with automatic configuration
+
+#### 2. Render
+- **Free tier**: 750 hours/month, 512MB RAM
+- **Features**: Auto-deploy, custom domains, PostgreSQL
+- **Steps**:
+  1. Sign up at [render.com](https://render.com)
+  2. Create new web service
+  3. Connect repository and deploy
+
+#### 3. Fly.io
+- **Free tier**: 2 shared CPUs, 256MB RAM
+- **Features**: Global deployment, databases
+- **Steps**:
+  1. Install Fly CLI
+  2. Run `fly launch` in your backend directory
+  3. Deploy with `fly deploy`
+
+#### 4. Supabase (Backend as a Service)
+- **Free tier**: 500MB database, 50MB file storage
+- **Features**: PostgreSQL, Auth, Real-time, APIs
+- **Perfect for**: Finance apps with built-in auth and database
+
+### Database Options (Free)
+
+#### 1. Supabase
+- **Free tier**: 500MB database, 50MB file storage
+- **Features**: PostgreSQL, Auth, Real-time, Storage
+- **URL**: [supabase.com](https://supabase.com)
+
+#### 2. PlanetScale
+- **Free tier**: 1 database, 5GB storage
+- **Features**: MySQL, branching, scaling
+- **URL**: [planetscale.com](https://planetscale.com)
+
+#### 3. MongoDB Atlas
+- **Free tier**: 512MB storage
+- **Features**: Cloud MongoDB, backups
+- **URL**: [mongodb.com/atlas](https://mongodb.com/atlas)
+
+#### 4. Neon
+- **Free tier**: 0.5GB storage
+- **Features**: PostgreSQL, branching
+- **URL**: [neon.tech](https://neon.tech)
+
 ## 📝 Contributing
 
 1. Fork the repository
